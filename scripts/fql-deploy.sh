@@ -1,8 +1,8 @@
 #!/bin/bash
 
 mvn deploy:deploy-file \
-    -Durl=file:./releases \
-    -DrepositoryId=releases \
+    -Durl=file:./snapshots \
+    -DrepositoryId=snapshots \
     -Dfile=./lib/fql-0.9-SNAPSHOT.jar \
     -DgroupId=net.catdata \
     -DartifactId=fql \

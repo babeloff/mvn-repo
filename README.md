@@ -5,17 +5,38 @@ This is a staging area for artifacts for projects that I am working on that are 
 
 ## Deploy jar packages
 
-Deploy JGraph
+If the version number changes then you will need to update the
+script and create a new pom file as well as copying the
+correct jar into the lib directory.
+
+You will also need to add the files placed into
+the releases directory into your git repository.
+
+### Deploy JGraph
 
 ```bash
-./deploy-jgraph.sh
+./scripts/jgraph-deploy.sh
 ```
+
+### Deploy FQL
+
+First you will need to copy the approprate jar file.
+```bash
+cp ../fql/target/fql-0.9-SNAPSHOT-maven-jar-with-dependencies.jar ./lib/fql-0.9-SNAPSHOT.jar
+```
+
+```bash
+./scripts/jgraph-deploy.sh
+./scripts/fql-deploy.sh
+```
+
 
 ## Configure your project to use the repository
 
 Add the following to the pom.xml file for your project.
 
-```xml
+For registering this repository with maven add the following to the pom.xml.
+```maven
 <repositories>
     <repository>
         <id>babeloff</id>
@@ -28,3 +49,14 @@ Add the following to the pom.xml file for your project.
 </repositories>
 ```
 
+```gradle
+repositories {
+        mavenCentral()
+        babeloff {
+            url "https://github.com/babeloff/mvn-repo/raw/master/releases"
+        }
+        babeloff-snapshots {
+            url "https://github.com/babeloff/mvn-repo/raw/master/snapshots"
+        }
+    }
+```
