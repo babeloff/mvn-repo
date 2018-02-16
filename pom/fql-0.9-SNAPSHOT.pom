@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.catdata</groupId>
+  <artifactId>fql</artifactId>
+  <version>0.9-SNAPSHOT</version>
+  <description>Library, IDE and compiler for a family of functorial query languages.</description>
+  <name>Categorical Data IDE</name>
+  <url>http://categoricaldata.net/fql.html</url>
+</project>
