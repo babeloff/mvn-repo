@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cp ../fql/target/fql-0.9-SNAPSHOT-maven-jar-with-dependencies.jar \
+    ./lib/fql-0.9-SNAPSHOT.jar
+
 mvn deploy:deploy-file \
     -Durl=file:./snapshots \
     -DrepositoryId=snapshots \

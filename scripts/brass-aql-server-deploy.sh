@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+cp ../fql/target/fql-0.9-SNAPSHOT-maven-jar-with-dependencies.jar ./lib/brass-aql-server-2018.02.10.jar
+
 mvn deploy:deploy-file \
     -Durl=file:./releases \
     -DrepositoryId=releases \
