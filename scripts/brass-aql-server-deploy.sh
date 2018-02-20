@@ -1,16 +1,17 @@
 #!/bin/bash
 
+VERSION="2018.02.20"
 
-cp ../aql-server-brass/aql/target/aql-server-2018.02.10.jar \
-    ./lib/brass-aql-server-2018.02.10.jar
+cp ../aql-server-brass/aql/target/aql-server-${VERSION}.jar \
+    ./lib/brass-aql-server-${VERSION}.jar
 
 mvn deploy:deploy-file \
     -Durl=file:./releases \
     -DrepositoryId=releases \
-    -Dfile=./lib/brass-aql-server-2018.02.10.jar \
+    -Dfile=./lib/brass-aql-server-${VERSION}.jar \
     -DgroupId=babeloff \
     -DartifactId=brass-aql-server \
-    -Dversion=2018.02.10 \
+    -Dversion=${VERSION} \
     -Dpackaging=jar \
     -DgeneratePom=true \
     -DgeneratePom.description="The BRASS AQL server" \
