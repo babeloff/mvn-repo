@@ -5,7 +5,7 @@ This is a staging area for artifacts for projects that I am working on that are 
 
 ## Packages provided
 
-### The **brass-aql-server** 
+### The **brass-aql-server** https://github.com/babeloff/aql-server-brass
 
 As a Gradle dependency.
 ```gradle
