@@ -1,8 +1,9 @@
 #!/bin/bash
 
-VERSION="2018.02.20"
+VERSION="2018.03.16"
+SNAPSHOT=`date +%Y%m%d`
 
-cp ../aql-server-brass/aql/target/aql-server-${VERSION}.jar \
+cp ../aql-server-brass/aql/target/brass-aql-server-${VERSION}.jar \
     ./lib/brass-aql-server-${VERSION}.jar
 
 mvn deploy:deploy-file \
