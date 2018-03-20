@@ -17,17 +17,17 @@ This is run as a java executable jar.
 java -jar ./<where-ever>/brass-aql-server-<version>.jar
 ```
 
-This receives and processes messages as described here... 
+This receives and processes messages as described here...
 https://github.com/babeloff/aql-server-brass
 
-### The FQL IDE and library 
+### The FQL IDE and library
 
 Boot or Leiningen
 ```boot
 [net.catdata/fql "0.9-SNAPSHOT"]
 ```
 
-### The JGRAPH Library 
+### The JGRAPH Library
 
 Maven
 ```mvn
@@ -94,11 +94,11 @@ the releases directory into your git repository.
 
 First you will need to copy the approprate jar file.
 ```bash
-cp ..//target/brass-aql-server-2018.02.10.jar ./lib/brass-aql-server-2018.02.10.jar
+cp ..//target/aql-brass-server-2018.03.20.jar ./lib/brass-aql-server-2018.02.10.jar
 ```
 
 ```bash
-./scripts/brass-aql-server-deploy.sh
+./scripts/aql-brass-server-deploy.sh
 ```
 
 ### Deploy JGraph
@@ -117,5 +117,3 @@ cp ../fql/target/fql-0.9-SNAPSHOT-maven-jar-with-dependencies.jar ./lib/fql-0.9-
 ```bash
 ./scripts/fql-deploy.sh
 ```
-
-
