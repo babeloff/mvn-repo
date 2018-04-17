@@ -5,16 +5,16 @@ This is a staging area for artifacts for projects that I am working on that are 
 
 ## Packages provided
 
-### The **brass-aql-server** https://github.com/babeloff/aql-server-brass
+### The **aql-server-brass** https://github.com/babeloff/aql-server-brass
 
 As a Gradle dependency.
 ```gradle
-compile group: 'babeloff', name: 'brass-aql-server', version: '2018.02.20'
+compile group: 'babeloff', name: 'aql-server-brass', version: '2018.03.20'
 ```
 
 This is run as a java executable jar.
 ```java
-java -jar ./<where-ever>/brass-aql-server-<version>.jar
+java -jar ./<where-ever>/aql-server-brass-<version>.jar
 ```
 
 This receives and processes messages as described here...
@@ -90,11 +90,11 @@ correct jar into the lib directory.
 You will also need to add the files placed into
 the releases directory into your git repository.
 
-### Deploy the brass-aql-server
+### Deploy the aql-server-brass
 
 First you will need to copy the approprate jar file.
 ```bash
-cp ..//target/aql-brass-server-2018.03.20.jar ./lib/brass-aql-server-2018.02.10.jar
+cp ../target/aql-brass-server-2018.03.20.jar ./lib/aql-server-brass-2018.03.20.jar
 ```
 
 ```bash
