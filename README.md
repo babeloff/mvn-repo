@@ -9,7 +9,7 @@ This is a staging area for artifacts for projects that I am working on that are 
 
 As a Gradle dependency.
 ```gradle
-compile group: 'babeloff', name: 'aql-server-brass', version: '2018.03.20'
+compile group: 'babeloff', name: 'aql-server-brass', version: '2018.04.18'
 ```
 
 This is run as a java executable jar.
