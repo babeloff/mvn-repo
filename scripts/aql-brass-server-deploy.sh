@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="2018.03.20"
+VERSION="2018.04.18"
 SNAPSHOT=`date +%Y%m%d`
 
 cp ../aql-server-brass/aql/target/aql-brass-server-${VERSION}.jar \
