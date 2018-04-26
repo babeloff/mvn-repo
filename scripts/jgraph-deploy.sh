@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mvn deploy:deploy-file \
-    -Durl=http://immortals.isis.vanderbilt.edu:8081/repository/maven-releases \
+    -Durl=https://nexus.isis.vanderbilt.edu/repository/maven-releases \
     -DrepositoryId=nexus \
     -Dfile=./lib/jgraph-5.12.3.2.jar \
     -DgroupId=jgraph \
